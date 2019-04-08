@@ -1,4 +1,4 @@
 #! /bin/bash
 
 cd public 
-s3cmd put --recursive . s3://alexisbellydance.com
+s3cmd sync /alexis . s3://alexisbellydance.com
