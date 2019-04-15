@@ -257,6 +257,7 @@
 }
 .pe-7s-phone:before {
 	content: "\e627";
+	color: beige;
 }
 .pe-7s-plug:before {
 	content: "\e69a";
@@ -320,9 +321,11 @@
 }
 .pe-7s-map-marker:before {
 	content: "\e638";
+	color: beige;
 }
 .pe-7s-mail:before {
 	content: "\e639";
+	color: beige;
 }
 .pe-7s-mail-open:before {
 	content: "\e63a";

@@ -1,0 +1,27 @@
+{
+  "name": "alexis",
+  "version": "1.0.0",
+  "description": "personal business site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilbobraggins/alexis-bellydance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilbobraggins/alexis-bellydance/issues"
+  },
+  "homepage": "https://github.com/wilbobraggins/alexis-bellydance#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

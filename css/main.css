@@ -594,7 +594,7 @@ a:hover>span.site-name{
 }
 .header-page .inner-content {
     padding: 25px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
     display: table;
     height: 410px;
     width: calc(100% - 40px);
@@ -1982,8 +1982,9 @@ ul.client-thumb-2 li a img:hover{
     margin-bottom: 30px;
 }
 .img img {
-    max-width: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2292,9 +2293,9 @@ span.press {
 }
 /* Height of portfolio */
 .home-portfolio-image {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2383,6 +2384,32 @@ ul.social-buttons li {
 .project-information td {} .single-project-images {
     margin-bottom: 30px;
 }
+.single-project-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    opacity: 1;
+} 
+.single {
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
 .single-project-images img {
     max-width: 100%;
     height: auto;
@@ -2822,6 +2849,7 @@ ul.social-buttons li {
 }
 .title-info {
     font-weight: 500;
+
 }
 .title-info,
 .description-info {
@@ -2829,9 +2857,11 @@ ul.social-buttons li {
     display: block;
     padding-left: 30px;
     letter-spacing: 1px;
+    color: beige;
 }
 .description-info {
     font-weight: 100;
+
 }
 .contact-form {} .contact-form input[type="submit"] {
     width: 100%;
