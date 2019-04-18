@@ -12,10 +12,9 @@
 
     <!-- Google Web Font -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
 
     <!--  Bootstrap 3-->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 
     <!--  Slider -->
@@ -33,15 +32,12 @@
     <!-- Magnific PopUp -->
     <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Tabs -->
-    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
 
     <!-- Loader Style -->
     <link rel="stylesheet" href="css/loader-1.css">
 
     <!-- Costum Styles -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -167,7 +163,7 @@
 <br/>
 <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
     <div class="img home-portfolio-image">
-        <img src="img/home-portfolio/lexcard5.jpg" alt="Portfolio Item">
+        <img data-src="img/home-portfolio/lexcard5.jpg" alt="Portfolio Item">
         <div class="overlay-thumb">
             <a href="javascript:void(0)" class="like-product">
                 <i class="ion-ios-heart-outline"></i>
@@ -186,7 +182,7 @@
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12 mix web">
     <div class="img home-portfolio-image">
-        <img src="img/home-portfolio/lexcard1.jpg" alt="Portfolio Item">
+        <img data-src="img/home-portfolio/lexcard1.jpg" alt="Portfolio Item">
         <div class="overlay-thumb">
             <a href="javascript:void(0)" class="like-product">
                 <i class="ion-ios-heart-outline"></i>
@@ -206,7 +202,7 @@
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12 mix graphic">
     <div class="img home-portfolio-image">
-        <img src="img/lex432.jpg" alt="Portfolio Item">
+        <img data-src="img/lex432.jpg" alt="Portfolio Item">
         <div class="overlay-thumb">
             <a href="javascript:void(0)" class="like-product">
                 <i class="ion-ios-heart-outline"></i>
@@ -298,6 +294,6 @@
     <script src="js/vendor/wow.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ajax.js"></script>
-    <script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
+    <script data-pace-options='{ "ajax": false, "document": true, "eventLag": false}' src="js/vendor/pace.min.js"></script>
 </body>
 </html>
