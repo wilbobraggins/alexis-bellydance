@@ -2405,6 +2405,10 @@ ul.social-buttons li {
   background-color: #008CBA;
 }
 
+#card1:hover .overlay {
+    opacity: 1;
+}
+
 .single-project-images img {
     max-width: 100%;
     height: auto;
