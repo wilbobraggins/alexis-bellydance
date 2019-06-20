@@ -274,6 +274,30 @@
         t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
       })(window, document, '_gscq','script','//widgets.getsitecontrol.com/173390/script.js');
     </script>
+    
+   <script>
+     var initDestroyTimeOutPace = function() {
+        var counter = 0;
+
+        var refreshIntervalId = setInterval( function(){
+            var progress; 
+
+            if( typeof $( '.pace-progress' ).attr( 'data-progress-text' ) !== 'undefined' ) {
+                progress = Number( $( '.pace-progress' ).attr( 'data-progress-text' ).replace("%" ,'') );
+            }
+
+            if( progress === 99 ) {
+                counter++;
+            }
+
+            if( counter > 50 ) {
+                clearInterval(refreshIntervalId);
+                Pace.stop();
+            }
+        }, 100);
+    }
+    initDestroyTimeOutPace();
+   </script>
 
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
