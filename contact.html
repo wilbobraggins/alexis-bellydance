@@ -46,7 +46,9 @@
 
     <!-- Google Map API -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARb0PI-SvQndOuf7IZJVnW4EttcZzXuXg"></script>
-
+    
+    <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -164,17 +166,17 @@
                     </div>
                 </div>
 
-                <form action="mailto:alexisrbellydance@gmail.com" method="GET">
+                <form action="https://contact-alexis-bellydance.herokuapp.com/users" method="POST">
                     <div class="contact-form">
 
                         <div class="col-md-4">
-                            <input type="text" placeholder="NAME *">
-                            <input type="text" placeholder="E-MAIL *">
-                            <input type="text" placeholder="SUBJECT">
+                            <input type="text" required name="name" placeholder="NAME *">
+                            <input type="text" required name="email" placeholder="E-MAIL *">
+                            <input type="text" required name="subject" placeholder="SUBJECT">
                         </div>
                         <div class="col-md-5">
-                            <textarea placeholder="MESSAGE"></textarea>
-                            <input type="submit" value="SEND">
+                            <textarea required name="message" placeholder="MESSAGE"></textarea>
+                            <input class="button" type="submit" value="SEND">
                         </div>
                     </div>
                 </form>
@@ -226,6 +228,19 @@
                     </div>
                 </div>
             </div>
+    <script>
+        $( "form").on("submit", function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: $(this).attr("action"),
+                type: 'POST',
+                data: $(this).serialize(),
+                beforeSend: function() {
+                    $(".button").html("sending...")
+                }
+            })
+        })
+    </script>
     <script src="js/vendor/mail.js" id="mail-link"></script>       
 
     <a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
