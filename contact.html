@@ -236,10 +236,11 @@
                 type: 'POST',
                 data: $(this).serialize(),
                 beforeSend: function() {
-                    $(".button").html("sending...");
+                    $(".button").html("loading");
                 },
                 success: function(data) {
-                  $(".button").hide();
+                  alert("Message Sent")
+                  $('form')[0].reset();
                 }
             });
         });
