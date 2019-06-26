@@ -236,10 +236,13 @@
                 type: 'POST',
                 data: $(this).serialize(),
                 beforeSend: function() {
-                    $(".button").html("sending...")
+                    $(".button").html("sending...");
+                },
+                success: function(data) {
+                  $(".button").hide();
                 }
-            })
-        })
+            });
+        });
     </script>
     <script src="js/vendor/mail.js" id="mail-link"></script>       
 
