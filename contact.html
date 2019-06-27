@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <form action="https://contact-alexis-bellydance.herokuapp.com/users" method="POST">
+                <form>
                     <div class="contact-form">
 
                         <div class="col-md-4">
@@ -232,7 +232,7 @@
         $( "form").on("submit", function(e) {
             e.preventDefault();
             $.ajax({
-                url: $(this).attr("action"),
+                url: "https://contact-alexis-bellydance.herokuapp.com/users",
                 type: 'POST',
                 data: $(this).serialize(),
                 beforeSend: function() {

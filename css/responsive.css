@@ -77,7 +77,7 @@
 		overflow-y: auto;
 	}
 
-	.menu-wrap-2 ul li ul.sub-menu{
+	.header .menu-wrap-2 ul li ul.sub-menu{
 		display: block !important;
 	}
 	.menu-wrap-2 ul li ul li ul.sub-menu{
@@ -176,7 +176,7 @@
 		background: rgba(123,238,199,0.8);
 	}
 
-	.header-page .inner-content .header-content h1 {
+	.header .header-page .inner-content .header-content h1 {
     	font-size: 30px;
 	}
 	.header-page{
