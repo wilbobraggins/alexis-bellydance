@@ -60,3 +60,26 @@ jQuery(window).load(function($) {
 
 
 });
+
+
+        $( "form").on("submit", function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: "https://contact-alexis-bellydance.herokuapp.com/users",
+                type: 'POST',
+                crossDomain: true,
+                data: $(this).serialize(),
+                beforeSend: function() {
+                    $('#loader').show();
+                    $('.button').hide();
+                },
+                success: function(data) {
+                  alert("Message Sent")
+                  $('form')[0].reset();
+                  $('.button').show();
+                },
+                complete:function(data){
+                    $("#loader").hide()
+                }
+            });
+        });
