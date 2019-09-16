@@ -12,14 +12,14 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 
     <!--  Bootstrap 3-->
-    <link rel="preload" as="style" href="css/bootstrap.min.css">
+    <link rel="stylesheet" as="style" href="css/bootstrap.min.css">
 
 
     <!-- Animate -->
     <link rel="stylesheet" href="css/animate.css">
 
     <!-- Web Icons Font -->
-    <link rel="preload" as="style" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" as="style" href="css/pe-icon-7-stroke.css">
     <link rel="stylesheet" href="css/iconmoon.css">
     <link rel="stylesheet" href="css/et-line.css">
     <link rel="stylesheet" href="css/ionicons.css">
@@ -137,58 +137,44 @@
         </div>
     </div>
 
-    <div class="container margin-top">
-        <div class="contact-wrapper">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="contact-info">
-                        <span class="icon-info">
-                        <i class="pe-7s-phone"></i>
-                    </span>
-                        <span class="title-info">CALL:</span>
-                        <span class="description-info">603 707 0796</span>
-                    </div>
-
-                    <div class="contact-info">
-                        <span class="icon-info">
-                        <i class="pe-7s-map-marker"></i>
-                    </span>
-                        <span class="title-info">ADDRESS:</span>
-                        <span class="description-info">4110 SE Hawthorne BLVD, PORTLAND OR, 97214.</span>
-                    </div>
-
-                    <div class="contact-info">
-                        <span class="icon-info">
-                        <i class="pe-7s-mail"></i>
-                    </span>
-                        <span class="title-info">EMAIL:</span>
-                        <span class="description-info">alexisrbellydance@gmail.com</span>
-                    </div>
+    <div class="row">
+        <div class="contact-wrapper"> 
+            <div class="col-md-6 col-md-offset-3">
+                <div class="contact-info">
+                    <span class="icon-info">
+                    <i class="pe-7s-phone"></i></span>
+                    <span class="title-info">CALL:</span>
+                    <span class="description-info">603 707 0796</span>
+                </div> 
+            </div>
+            <div class="col-md-6 col-md-offset-3">  
+                <div class="contact-info">
+                    <span class="icon-info">
+                    <i class="pe-7s-mail"></i></span>            
+                    <span class="title-info">EMAIL:</span>
+                    <span class="description-info">alexisrbellydance@gmail.com</span>
                 </div>
-
-                <form>
-                    <div class="contact-form">
-
-                        <div class="col-md-4">
-                            <input type="text" required name="name" placeholder="NAME *">
-                            <input type="text" required name="email" placeholder="E-MAIL *">
-                            <input type="text" required name="subject" placeholder="SUBJECT">
-                        </div>
-                        <div class="col-md-5">
-                            <textarea required name="message" placeholder="MESSAGE"></textarea>
-                            <input class="button" type="submit" value="SEND">
-                            <!-- Image loader -->
-                            <div id='loader' style='display: none;'>
-                                <img src='videos/loader.gif' width='100%' height='32px'>
-                            </div>
-                            <!-- Image loader -->
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
+        <div class="contact-form">
+            <form>
+                <div class="col-md-6 col-md-offset-3">
+                    <input type="text" required name="name" placeholder="NAME *">
+                    <input type="text" required name="email" placeholder="E-MAIL *">
+                    <input type="text" required name="subject" placeholder="SUBJECT">
+                </div>     
+                <div class="col-md-6 col-md-offset-3">
+                    <textarea required name="message" placeholder="MESSAGE"></textarea>
+                    <input class="button" type="submit" value="SEND">
+                    <!-- Image loader -->
+                    <div id='loader' style='display: none;'>
+                        <img src='videos/loader.gif' width='100%' height='32px'>
+                    </div>
+                    <!-- Image loader -->
+                </div>    
+            </form>
+        </div>
     </div>
-
     <div class="footer margin-top">
                 <div class="container">
                     <div class="row">

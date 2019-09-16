@@ -249,6 +249,9 @@ ul.sublist {
 .no-padding {
     padding: 0;
 }
+.link {
+    color: #7beec7;
+}
 .no-margin {
     margin: 0;
 }
@@ -489,6 +492,11 @@ a:hover>span.site-name{
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#index-background {
+    height: 600px;
+    min-width: 100%;
 }
 
 /*Slider Home*/
@@ -2826,6 +2834,7 @@ ul.social-buttons li {
     font-size: 18px;
 }
 .contact-wrapper {
+    margin-top: 25px;
     clear: both;
     float: left;
     width: 100%;
